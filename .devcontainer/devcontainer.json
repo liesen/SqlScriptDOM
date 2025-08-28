@@ -1,0 +1,9 @@
+{
+	"name": "C# (.NET)",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/dotnet:2": {},
+		"ghcr.io/devcontainers/features/java:1": {}
+	},
+	"postCreateCommand": "dotnet restore dirs.proj",
+}
