@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore dirs.proj
     - name: Build
-      run: dotnet build dirs.proj --configuration Debug
+      run: dotnet build dirs.proj --framework net8.0 --configuration Debug
     - name: Test
       run: dotnet test dirs.proj --framework net8.0 --no-build --verbosity normal
